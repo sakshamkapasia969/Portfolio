@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saksham Kapasia - WD LAB Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link to separated CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300">
+    
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-card border-b border-slate-200/50 dark:border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#hero" class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center text-white font-bold shadow-lg shadow-indigo-500/30">SK</div>
+                <div>
+                    <span class="font-bold text-lg block leading-none">Saksham Kapasia</span>
+                    <span class="text-xs text-indigo-600 dark:text-indigo-400 font-medium">CSIT • WD LAB</span>
+                </div>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-indigo-600 transition-colors">About</a>
+                <a href="#skills" class="hover:text-indigo-600 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-indigo-600 transition-colors">Lab Projects</a>
+                <a href="#contact" class="hover:text-indigo-600 transition-colors">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-3">
+                <button id="themeToggle" class="w-10 h-10 rounded-xl glass-card flex items-center justify-center hover:scale-105 transition-transform" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon dark:hidden text-slate-700"></i>
+                    <i class="fa-solid fa-sun hidden dark:block text-amber-400"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-36 pb-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative overflow-hidden">
+        <div class="absolute inset-0 -z-10 flex items-center justify-center opacity-30 dark:opacity-20 pointer-events-none">
+            <div class="w-[500px] h-[500px] bg-gradient-to-tr from-indigo-500 to-purple-500 rounded-full blur-3xl"></div>
+        </div>
+        <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 text-xs font-semibold mb-6 border border-indigo-200/50 dark:border-indigo-800/50">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>GL Bajaj Institute of Technology and Management | Department of CSIT</span>
+        </div>
+        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight">
+            Hi, I'm <span class="bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 bg-clip-text text-transparent">Saksham Kapasia</span> 👋
+        </h1>
+        <p class="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mt-6 text-lg leading-relaxed">
+            Roll Number: <code class="font-mono bg-indigo-50 dark:bg-indigo-950 px-2 py-1 rounded text-indigo-600 dark:text-indigo-400 font-bold border border-indigo-200 dark:border-indigo-800">2501920110325</code>
+        </p>
+        <p class="text-slate-500 dark:text-slate-400 max-w-xl mx-auto mt-2 text-sm">
+            Welcome to my Web Development Lab portfolio showcasing practical assignments, responsive interfaces, and interactive web apps.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+            <a href="#projects" class="px-6 py-3 rounded-xl bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition shadow-lg shadow-indigo-600/30 flex items-center space-x-2">
+                <span>View Lab Projects</span>
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            <a href="#contact" class="px-6 py-3 rounded-xl glass-card font-medium hover:border-indigo-500 transition">
+                Get in Touch
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="glass-card p-8 rounded-3xl glow-effect">
+                <div class="w-16 h-16 rounded-2xl bg-indigo-600/10 dark:bg-indigo-400/10 flex items-center justify-center text-indigo-600 dark:text-indigo-400 text-2xl mb-6">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <h2 class="text-2xl font-bold mb-4">About Me & Academic Details</h2>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                    I am an enthusiastic engineering student currently pursuing Computer Science and Information Technology (CSIT) at <strong>GL Bajaj Institute of Technology and Management</strong>. 
+                </p>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
+                    This portfolio repository tracks my progress, assignments, and experiential projects built during the <strong>Web Development Lab (WD LAB)</strong> sessions.
+                </p>
+            </div>
+            <div class="space-y-4">
+                <div class="glass-card p-6 rounded-2xl flex items-center space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-violet-600/10 text-violet-600 flex items-center justify-center text-xl font-bold"><i class="fa-solid fa-id-card"></i></div>
+                    <div>
+                        <h4 class="text-xs text-slate-500 font-semibold uppercase tracking-wider">Roll Number</h4>
+                        <p class="text-lg font-bold font-mono">2501920110325</p>
+                    </div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl flex items-center space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-blue-600/10 text-blue-600 flex items-center justify-center text-xl font-bold"><i class="fa-solid fa-building-columns"></i></div>
+                    <div>
+                        <h4 class="text-xs text-slate-500 font-semibold uppercase tracking-wider">Institution</h4>
+                        <p class="text-lg font-bold">GL Bajaj Institute of Technology and Management</p>
+                    </div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl flex items-center space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-600/10 text-emerald-600 flex items-center justify-center text-xl font-bold"><i class="fa-solid fa-laptop-code"></i></div>
+                    <div>
+                        <h4 class="text-xs text-slate-500 font-semibold uppercase tracking-wider">Department</h4>
+                        <p class="text-lg font-bold">CSIT (Computer Science & Information Technology)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-extrabold">Technical Skills & Lab Stack</h2>
+            <p class="text-slate-600 dark:text-slate-400 mt-2">Tools and technologies practiced in WD LAB.</p>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+            <div class="glass-card p-6 rounded-2xl text-center hover:scale-105 transition">
+                <i class="fa-brands fa-html5 text-4xl text-orange-500 mb-3"></i>
+                <h4 class="font-bold">HTML5</h4>
+            </div>
+            <div class="glass-card p-6 rounded-2xl text-center hover:scale-105 transition">
+                <i class="fa-brands fa-css3-alt text-4xl text-blue-500 mb-3"></i>
+                <h4 class="font-bold">CSS3 & Tailwind</h4>
+            </div>
+            <div class="glass-card p-6 rounded-2xl text-center hover:scale-105 transition">
+                <i class="fa-brands fa-js text-4xl text-yellow-400 mb-3"></i>
+                <h4 class="font-bold">JavaScript</h4>
+            </div>
+            <div class="glass-card p-6 rounded-2xl text-center hover:scale-105 transition">
+                <i class="fa-brands fa-react text-4xl text-cyan-400 mb-3"></i>
+                <h4 class="font-bold">React.js</h4>
+            </div>
+            <div class="glass-card p-6 rounded-2xl text-center hover:scale-105 transition">
+                <i class="fa-brands fa-git-alt text-4xl text-red-500 mb-3"></i>
+                <h4 class="font-bold">Git & GitHub</h4>
+            </div>
+            <div class="glass-card p-6 rounded-2xl text-center hover:scale-105 transition">
+                <i class="fa-solid fa-database text-4xl text-emerald-500 mb-3"></i>
+                <h4 class="font-bold">MySQL / SQL</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+            <div>
+                <h2 class="text-3xl font-extrabold">WD LAB Assignments & Projects</h2>
+                <p class="text-slate-600 dark:text-slate-400 mt-2">Core lab experiments completed during the semester.</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="glass-card rounded-3xl overflow-hidden flex flex-col justify-between">
+                <div class="p-6">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-600/10 text-indigo-600 flex items-center justify-center font-bold mb-4">01</div>
+                    <h3 class="text-xl font-bold mb-2">Interactive Resume Builder</h3>
+                    <p class="text-slate-600 dark:text-slate-300 text-sm mb-4">An HTML5 & CSS responsive resume template featuring clean typography and structured layout design.</p>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="px-2.5 py-1 rounded-full bg-slate-200 dark:bg-slate-800 font-medium">HTML5</span>
+                        <span class="px-2.5 py-1 rounded-full bg-slate-200 dark:bg-slate-800 font-medium">CSS3</span>
+                    </div>
+                </div>
+                <div class="px-6 py-4 bg-slate-100/50 dark:bg-slate-900/50 border-t border-slate-200/50 dark:border-slate-800/50 flex justify-between items-center text-sm font-semibold">
+                    <span class="text-indigo-600 dark:text-indigo-400">Lab Experiment 1</span>
+                    <a href="#projects" class="hover:underline">View Details <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                </div>
+            </div>
+            <div class="glass-card rounded-3xl overflow-hidden flex flex-col justify-between">
+                <div class="p-6">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-600/10 text-indigo-600 flex items-center justify-center font-bold mb-4">02</div>
+                    <h3 class="text-xl font-bold mb-2">JavaScript Calculator & Tools</h3>
+                    <p class="text-slate-600 dark:text-slate-300 text-sm mb-4">Dynamic calculation utility built using vanilla JavaScript DOM manipulation and event handling.</p>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="px-2.5 py-1 rounded-full bg-slate-200 dark:bg-slate-800 font-medium">JavaScript</span>
+                        <span class="px-2.5 py-1 rounded-full bg-slate-200 dark:bg-slate-800 font-medium">DOM API</span>
+                    </div>
+                </div>
+                <div class="px-6 py-4 bg-slate-100/50 dark:bg-slate-900/50 border-t border-slate-200/50 dark:border-slate-800/50 flex justify-between items-center text-sm font-semibold">
+                    <span class="text-indigo-600 dark:text-indigo-400">Lab Experiment 2</span>
+                    <a href="#projects" class="hover:underline">View Details <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                </div>
+            </div>
+            <div class="glass-card rounded-3xl overflow-hidden flex flex-col justify-between">
+                <div class="p-6">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-600/10 text-indigo-600 flex items-center justify-center font-bold mb-4">03</div>
+                    <h3 class="text-xl font-bold mb-2">React Student Portal Dashboard</h3>
+                    <p class="text-slate-600 dark:text-slate-300 text-sm mb-4">Component-driven student grade & attendance management system mock application.</p>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="px-2.5 py-1 rounded-full bg-slate-200 dark:bg-slate-800 font-medium">React.js</span>
+                        <span class="px-2.5 py-1 rounded-full bg-slate-200 dark:bg-slate-800 font-medium">Tailwind</span>
+                    </div>
+                </div>
+                <div class="px-6 py-4 bg-slate-100/50 dark:bg-slate-900/50 border-t border-slate-200/50 dark:border-slate-800/50 flex justify-between items-center text-sm font-semibold">
+                    <span class="text-indigo-600 dark:text-indigo-400">Lab Experiment 3</span>
+                    <a href="#projects" class="hover:underline">View Details <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="glass-card p-8 md:p-12 rounded-3xl max-w-3xl mx-auto">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-extrabold">Get In Touch</h2>
+                <p class="text-slate-600 dark:text-slate-400 mt-2">Reach out regarding WD LAB evaluations or project collaboration.</p>
+            </div>
+            <form id="contactForm" class="space-y-6">
+                <div>
+                    <label class="block text-sm font-medium mb-2">Your Name</label>
+                    <input type="text" id="senderName" required class="w-full px-4 py-3 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Enter your name">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-2">Email Address</label>
+                    <input type="email" id="senderEmail" required class="w-full px-4 py-3 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Enter your email">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-2">Message</label>
+                    <textarea rows="4" id="senderMessage" required class="w-full px-4 py-3 rounded-xl 
+                    bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Enter your email">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-2">Message</label>
+                    <textarea rows="4" id="senderMessage" required class="w-full px-4 py-3 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Type your message here..."></textarea>
+                </div>
+                <button type="submit" class="w-full py-3 rounded-xl bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition shadow-lg shadow-indigo-600/30">Send Message</button>
+            </form>
+            <div id="formSuccess" class="hidden mt-4 p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-200 dark:border-emerald-800 text-emerald-700 dark:text-emerald-300 text-center font-medium">
+                Thank you! Your message has been recorded.
+                </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-200 dark:border-slate-800 text-center text-sm text-slate-500 dark:text-slate-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p>© 2026 Saksham Kapasia • Roll No: 2501920110325 • GL Bajaj Institute of Technology and Management (CSIT)</p>
+            <p class="mt-2 text-xs">WD LAB Portfolio Project</p>
+        </div>
+    </footer>
+
+    <!-- Link to separated JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
